@@ -3,31 +3,48 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:gravity="bottom"
+    >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="SocketClient!"
-         />
-    <Button
-        android:id="@+id/connect"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="连接"/>
-    <TextView
-        android:id="@+id/initText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp" />
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src = "@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/initText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.37"
-        android:src = "@mipmap/ic_launcher"/>
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:textSize="20sp"
+            android:text="连接"/>
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:textSize="20sp"
+            android:text="刷新"/>
+
+    </LinearLayout>
+
+
+
 </LinearLayout>
